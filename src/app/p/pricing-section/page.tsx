@@ -4,8 +4,10 @@
 
 "use client"
 
-export default function PricingSection() {
-    return <div className="">
+import PricingSection from "@/app/components/PricingSection"
+
+export default function PricingSectionDemo() {
+    return <div className="px-10 py-10">
         <PricingSection />
     </div>
 }
