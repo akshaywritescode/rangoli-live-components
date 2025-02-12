@@ -41,7 +41,7 @@ export default function OTPVerification({ resetType, resetData }: TOTPVerificati
 
             </CardContent>
             <CardFooter className="flex flex-col items-start mt-5">
-                <Separator className="w-full bg-black/10" />
+                <Separator className="w-full bg-black/10" /> {/* Rangoli Provide Separator component Visit https://docs.rangoliui.me/components/P/pricing */}
                 <div className="flex gap-7 mt-5">
                     <Link href={"#"} className="text-xs">Need Help?</Link>
                     <Link href={"#"} className="text-xs">Send feedback</Link>

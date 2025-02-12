@@ -1,9 +1,14 @@
 "use client";
-export default function Separator({ className }: { className?: string }) {
+
+type TSeparator = {
+  className?: string
+}
+
+export default function Separator({ className }: TSeparator) {
 
   return (
     <div
-      className={`${className} w-full h-[1px]`}
+      className={`${className} h-[1px]`}
     ></div>
   );
 }
