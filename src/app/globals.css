@@ -73,3 +73,7 @@ body {
   }
 }
 
+
+.container-center {
+  @apply px-10 py-10 min-h-screen flex justify-center items-center;
+}
