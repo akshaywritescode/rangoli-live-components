@@ -18,7 +18,7 @@ export default function OTPVerification({ resetType, resetData, needHelpLink, se
         <Card className="w-[400px]">
             <CardHeader>
                 <CardTitle className="mb-2 text-xl">OTP Verification</CardTitle>
-                <CardDescription className="text-base">Enter the 6-digit code sent to your {resetType === "phone" ? "phone number" : "email address"} that ends with {resetData}. This code is valid for the next 10 Minutes.</CardDescription>
+                <CardDescription className="text-[0.9rem]">Enter the 6-digit code sent to your {resetType === "phone" ? "phone number" : "email address"} {resetData}. This code is valid for the next 10 Minutes.</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="flex flex-col justify-center items-center mt-4">
@@ -39,8 +39,6 @@ export default function OTPVerification({ resetType, resetData, needHelpLink, se
                     <Button className="mt-10 w-full py-6 text-base"><LockIcon />Reset Password</Button>
                     <span className="text-sm mt-3">Din't get the code?<span className="underline"> Resend code</span></span>
                 </div>
-
-
             </CardContent>
             <CardFooter className="flex flex-col items-start mt-5">
                 <Separator className="w-full bg-black/10" /> 
