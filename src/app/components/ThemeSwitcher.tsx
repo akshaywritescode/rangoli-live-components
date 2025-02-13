@@ -4,7 +4,12 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Laptop, MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes"
 
-export default function ThemeSwitcher({ defaultValue }: { defaultValue: "system" | "light" | "dark" }) {
+type TThemeSwicther = {
+    defaultValue: "system" | "light" | "dark",
+    className?: "string"
+}
+
+export default function ThemeSwitcher({ defaultValue }: TThemeSwicther) {
     const { setTheme } = useTheme();
 
     return (
