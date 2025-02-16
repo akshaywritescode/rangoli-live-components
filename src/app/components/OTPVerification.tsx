@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "@/components/ui/input-otp";
-import { LockIcon } from "lucide-react";
+import { LockIcon, MailIcon } from "lucide-react";
 import Link from "next/link";
 import Separator from "./Separator";
 
@@ -18,7 +18,7 @@ export default function OTPVerification({ resetType, resetData, needHelpLink, se
         <Card className="w-[400px]">
             <CardHeader>
                 <CardTitle className="mb-2 text-xl">OTP Verification</CardTitle>
-                <CardDescription className="text-[0.9rem]">Enter the 6-digit code sent to your {resetType === "phone" ? "phone number" : "email address"} {resetData}. This code is valid for the next 10 Minutes.</CardDescription>
+                <CardDescription className="text-sm">Enter the 6-digit code sent to your {resetType === "phone" ? "phone number" : "email address"} {resetData}. This code is valid for the next 10 Minutes.</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="flex flex-col justify-center items-center mt-4">
@@ -36,7 +36,7 @@ export default function OTPVerification({ resetType, resetData, needHelpLink, se
                         </InputOTPGroup>
                     </InputOTP>
 
-                    <Button className="mt-10 w-full py-6 text-base"><LockIcon />Reset Password</Button>
+                    <Button className="mt-10 w-full py-6 text-base"><MailIcon />Send Password Reset Link</Button>
                     <span className="text-sm mt-3">Din't get the code?<span className="underline"> Resend code</span></span>
                 </div>
             </CardContent>
