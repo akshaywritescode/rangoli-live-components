@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "@/components/ui/input-otp";
-import { LockIcon, MailIcon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 import Link from "next/link";
 import Separator from "./Separator";
 
