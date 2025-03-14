@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Rangoli Live Components – Interactive UI Previews 🚀
 
-## Getting Started
+This repository hosts **live, interactive examples** of **Rangoli UI** components, allowing developers to preview, test, and experiment with them in real time. 🖥️✨
 
-First, run the development server:
+![Hero Image](https://raw.githubusercontent.com/akshaywritescode/rangoli-docs/refs/heads/main/images/reset-password.png)
 
-```bash
+## 🔥 Features
+
+✅ **Real-time previews** of Rangoli UI components  
+✅ **Fully responsive & accessible** design  
+✅ **Built with Next.js + Tailwind CSS** for smooth performance  
+✅ **Easily extendable** with new component examples
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/akshaywritescode/rangoli-live-components.git
+cd rangoli-live-components
+```
+
+### 2️⃣ Install Dependencies
+
+```sh
+npm install
+# or
+yarn install
+```
+
+### 3️⃣ Run the Development Server
+
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now visit http://localhost:3000 to view live examples! 🎉
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Looking for Documentation?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If you're searching for Rangoli UI documentation, visit the docs repository:
 
-## Learn More
+🔗 [Rangoli Docs](https://github.com/akshaywritescode/rangoli-docs)
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We love contributions! If you want to add or improve live component examples:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork the repo 📌
+2. Create a new branch ✨
+3. Add your component example 💡
+4. Submit a PR 🚀
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Rangoli Live Components is licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💖 Built with love by Akshay Yadav
