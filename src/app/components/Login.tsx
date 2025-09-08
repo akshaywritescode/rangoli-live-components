@@ -1,19 +1,60 @@
-import { Input } from "@/components/ui/input";
-import PasswordInput from "./PasswordInput";
 import { Button } from "@/components/ui/button";
-import { Lock } from "lucide-react";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import PasswordInput from "./PasswordInput";
+import SeparatorWithText from "./SeparatorWithText";
+import { FacebookIcon, GithubIcon } from "lucide-react";
 
 export default function Login() {
-    return <div className="flex gap-20 w-full h-screen">
-        <div className="w-[70%] border border-black bg-blue-700 rounded-xl">
-
-        </div>
-        <div className="w-[30%] py-10">
+    return <Card className="w-[350px]">
+        <CardHeader>
+            <CardTitle className="text-xl">Login to your account</CardTitle>
+            <CardDescription>
+                Enter your email & password to login to your account.
+            </CardDescription>
+        </CardHeader>
+        <CardContent>
             <form>
-                <Input type="email" placeholder="xyz@email.com" className="mb-7" />
-                <PasswordInput placeholder="Password" />
-                <Button className="w-full mt-6 text-base"><Lock />Login Now</Button>
+                <div className="flex flex-col gap-6">
+                    <div className="grid gap-2">
+                        <Label htmlFor="email">Email</Label>
+                        <Input
+                            id="email"
+                            type="email"
+                            placeholder="m@example.com"
+                            required
+                        />
+                    </div>
+                    <div className="grid gap-2">
+                        <div className="flex items-center">
+                            <Label htmlFor="password">Password</Label>
+                            <a
+                                href="#"
+                                className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                            >
+                                Forgot your password?
+                            </a>
+                        </div>
+                        <PasswordInput placeholder="Password" required />
+                    </div>
+                    <Button type="submit" className="w-full">
+                        Login Now
+                    </Button>
+                </div>
             </form>
-        </div>
-    </div>
+        </CardContent>
+        <CardFooter className="flex flex-col w-full">
+            <SeparatorWithText text="or continue with" className="w-full" />
+            <div className="mt-6 flex justify-between w-full">
+                <Button variant="outline" size="sm" className="w-[140px]">
+                    <GithubIcon /> Github
+                </Button>
+
+                <Button variant="outline" size="sm" className="w-[140px]">
+                    <FacebookIcon /> Facebook
+                </Button>
+            </div>
+        </CardFooter>
+    </Card>
 }
