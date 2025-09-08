@@ -1,4 +1,3 @@
-import Separator from "@/app/components/Separator";
 import SeparatorWithText from "@/app/components/SeparatorWithText";
 import { Card } from "@/components/ui/card";
 
