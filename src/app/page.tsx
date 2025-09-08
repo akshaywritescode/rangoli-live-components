@@ -3,6 +3,12 @@ import Separator from "./components/Separator";
 
 const sections = [
   {
+    heading: "L",
+    links: [
+      { name: "Login Card", url: "/l/login" },
+    ],
+  },
+  {
     heading: "O",
     links: [
       { name: "OTP Verification", url: "/o/otp-verification" },
@@ -27,6 +33,7 @@ const sections = [
     heading: "S",
     links: [
       { name: "Seprator", url: "/s/separator" },
+      { name: "Seprator with text", url: "/s/separator-with-text" },
     ],
   },
   {
