@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import PasswordInput from "./PasswordInput";
 import SeparatorWithText from "./SeparatorWithText";
 import { FacebookIcon, GithubIcon } from "lucide-react";
+import Separator from "./Separator";
 
 export default function Login() {
     return <Card className="w-[350px]">
@@ -54,6 +55,15 @@ export default function Login() {
                 <Button variant="outline" size="sm" className="w-[140px]">
                     <FacebookIcon /> Facebook
                 </Button>
+            </div>
+            <Separator className="w-full" />
+            <div className="mt-4">
+                <span className="text-sm">Don't have an account?<a
+                    href="#"
+                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                >
+                    Sign up here
+                </a></span>
             </div>
         </CardFooter>
     </Card>
