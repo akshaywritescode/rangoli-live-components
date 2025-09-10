@@ -7,7 +7,7 @@ import SeparatorWithText from "./SeparatorWithText";
 import { FacebookIcon, GithubIcon } from "lucide-react";
 import Separator from "./Separator";
 
-export default function Login() {
+export default function LoginCard() {
     return <Card className="w-[350px]">
         <CardHeader>
             <CardTitle className="text-xl">Login to your account</CardTitle>

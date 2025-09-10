@@ -1,7 +1,7 @@
-import Login from "@/app/components/Login";
+import LoginCard from "@/app/components/LoginCard";
 
 export default function LoginDemo() {
     return <div className="container-center">
-        <Login />
+        <LoginCard />
     </div>
 }
