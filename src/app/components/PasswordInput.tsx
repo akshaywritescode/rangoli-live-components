@@ -20,12 +20,12 @@ export default function PasswordInput({ className, ...rest }: TPasswordInput) {
             />
             {visibility ? (
                 <EyeIcon
-                    className="w-4 absolute right-5 top-1/2 -translate-y-1/2 text-black/40 cursor-pointer"
+                    className="w-4 absolute right-5 top-1/2 -translate-y-1/2 text-muted-foreground cursor-pointer"
                     onClick={() => setVisibility((prevState) => !prevState)}
                 />
             ) : (
                 <EyeClosed
-                    className="w-4 absolute right-5 top-1/2 -translate-y-1/2 text-black/40 cursor-pointer"
+                    className="w-4 absolute right-5 top-1/2 -translate-y-1/2 text-muted-foreground cursor-pointer"
                     onClick={() => setVisibility((prevState) => !prevState)}
                 />
             )}
