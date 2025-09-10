@@ -26,7 +26,7 @@ const sections = [
   {
     heading: "R",
     links: [
-      { name: "Reset Password", url: "/r/reset-passoword" },
+      { name: "Reset Password", url: "/r/reset-password" },
     ],
   },
   {
